@@ -34,7 +34,7 @@ func (a *Bullet) Update() {
 	}
 }
 
-// drawSprite draws this sprite on the screen
+// Draw draws the bullet on the screen if it's active
 func (a *Bullet) Draw(screen *ebiten.Image) {
 	if a.active {
 		op := ebiten.DrawImageOptions{}

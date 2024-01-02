@@ -43,7 +43,7 @@ func (a *Baddie) Update() {
 	}
 }
 
-// drawSprite draws this sprite on the screen
+// Draw draws the baddie to the screen
 func (a *Baddie) Draw(screen *ebiten.Image) {
 	op := ebiten.DrawImageOptions{}
 	op.GeoM.Translate(a.x-radius, a.y-radius)

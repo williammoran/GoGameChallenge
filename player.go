@@ -33,7 +33,7 @@ func (a *Player) Update() {
 	}
 }
 
-// drawSprite draws this sprite on the screen
+// Draw draws the player on the screen
 func (a *Player) Draw(screen *ebiten.Image) {
 	op := ebiten.DrawImageOptions{}
 	op.GeoM.Translate(a.x-radius, playerVerticalPosition)
